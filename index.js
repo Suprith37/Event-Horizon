@@ -28,6 +28,7 @@ var __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 
 const port = 3000;
+const hostname = "0.0.0";
 
 
 
@@ -1053,10 +1054,10 @@ app.post("/logout",(req,res)=>{
 })
 
 
-app.listen(port,(err)=>{
+app.listen(port,hostname,(err)=>{
   if(err) console.log(err);
 
-  console.log("App starting at the port "+port);
+  console.log(`App starting at http://${hostname}:${port}/`);
 });
 
 

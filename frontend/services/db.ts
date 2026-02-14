@@ -2,7 +2,7 @@
 import type { Event, Registration, User } from '../types';
 
 // Backend API endpoint
-const API_BASE = (import.meta as any).env?.VITE_API_URL || 'http://localhost:5000/api';
+const API_BASE = (import.meta as any).env?.VITE_API_URL || process.eve.PORT;
 
 // Local storage keys for JWT token and user session
 const TOKEN_KEY = 'eventhub_token'; // Stores JWT token from backend

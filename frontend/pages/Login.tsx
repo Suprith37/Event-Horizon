@@ -29,8 +29,8 @@ const Login = () => {
         const user = await db.authenticateUser(formData.email, formData.password);
         if (user) {
           window.dispatchEvent(new Event('storage'));
-          // const from = (location.state as any)?.from?.pathname || '/dashboard';
-          const from = '/';
+          const from = (location.state as any)?.from?.pathname || '/dashboard';
+          // const from = '/';
           navigate(from, { replace: true });
         } else {
           setError('Invalid email or password.');

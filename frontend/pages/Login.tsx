@@ -206,7 +206,7 @@ const Login = () => {
 
             <div className="text-center pt-2">
               <button
-                type="button"
+                type="submit"
                 onClick={() => { setIsLogin(!isLogin); setError(null); }}
                 className="text-[10px] font-black text-gray-500 hover:text-black transition-all uppercase tracking-[0.2em] border-b-2 border-transparent hover:border-black"
               >

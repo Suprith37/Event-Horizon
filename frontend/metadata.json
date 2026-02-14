@@ -1,0 +1,8 @@
+
+{
+  "name": "EventHub Pro",
+  "description": "A comprehensive event management platform for hosts to create events and students to register, featuring QR-based attendance verification and a full host dashboard.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

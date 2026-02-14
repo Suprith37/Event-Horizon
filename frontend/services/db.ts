@@ -2,7 +2,7 @@
 import type { Event, Registration, User } from '../types';
 
 // Backend API endpoint
-const API_BASE = (import.meta as any).env?.VITE_API_URL || process.eve.PORT;
+const API_BASE = https://event-horizon-4zfq.onrender.com;
 
 // Local storage keys for JWT token and user session
 const TOKEN_KEY = 'eventhub_token'; // Stores JWT token from backend
